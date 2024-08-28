@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    background-color: rgba(51, 181, 224, 0.966);
+    padding: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sessao {
+    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%);
+    padding: 250px;
+    width: auto;
+}
+
+.sessao h1 {
+    font-size: 55px;
+    color: rgba(75, 75, 75, 0.856);
+}
+
+.sessao p {
+    font-size: 40px;
+}
+
+.sessao button {
+    padding: 20px;
+    border-radius: 50px;
+    width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(59, 216, 200);
+    border-color: turquoise;
+}
+
+.sessao button:hover {
+    color: white;
+    background-color: turquoise;
+    transition: 0.8s;
+    border-color: white;
+}
+
+.app {
+    padding: 150px;
+    background-color: rgba(248, 248, 248, 0.76);
+    display: flex;
+    justify-content: space-around;
+}
+
+.app div a button {
+    padding: 20px;
+    border-radius: 50px;
+    width: 300px;
+    margin: 40px;
+    font-size: 15px;
+    color: rgb(59, 216, 200);
+    border-color: turquoise;
+    cursor: pointer;
+}
+
+.app div p {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 43px;
+}
+
+.app div a button:hover {
+    background-color: turquoise; 
+    transition: 0.8s;
+    border-color: white; 
+    color: white;
+}
+
+.app div a {
+    text-decoration: none;
+    color: rgb(19, 153, 108); /*Cor da letra*/
+    font-size: 15px;
+}
+
+.app div button a {
+    color: white;
+    transition: 0.8s;
+}
+
+.app img {
+    width: 500px;
+    height: 500px;
+    margin-right: 80px;
+    margin-left: 50px;
+    margin-top: -80px;
+    align-items: center;
+}
+
+.container {
+    padding: 170px;
+    margin-top: 30px;
+    background-color: rgba(248, 248, 248, 0.76);
+}
+
+.container h2 {
+    font-size: 40px;
+    margin-top: -250px;
+    color: rgba(75, 75, 75, 0.856);
+    text-align: center;
+}
+
+.container p {
+    font-size: 20px; 
+    margin-top: 30px; 
+    text-align: justify;
+}
+
+.container button {
+    padding: 20px; 
+    border-radius: 50px; 
+    width: 250px; 
+    color: rgb(57, 46, 212); 
+    border-color: rgb(57, 46, 212); 
+    margin: 60px; 
+    font-size: 15px;
+}
+
+.container button a {
+    color: blue;
+    text-decoration: none;
+}
+
+.container button a:hover {
+    color: white;
+    transition: 0.8s;
+}
+
+.container button:hover {
+    background-color: rgb(57, 46, 212);
+    color: white;
+    border-color: white;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.line {
+    margin: 0 auto; 
+    width: 70%; 
+}
+
+.container img { 
+    margin-left: 10vw; 
+    margin-top: 30px; 
+    width: 850px; 
+}
+
+.cofre {
+    background: linear-gradient(180deg, #101cc264 8.33%, rgba(16, 53, 122, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cofre img {
+    width: 380px;
+    height: auto;
+    margin-top: 80px;
+    margin-right: 70px;
+}
+
+.cofre h2 {
+    color: white; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+.cofre p {
+    color: white;
+    font-size: 20px; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cofre span {
+    color: yellow;
+}
+
+footer {
+    padding: 55px;
+    background-color: rgba(29, 29, 29, 0.966);
+    text-align: center;
+}
+
+footer img {
+    width: 250px;
+    height: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.footer-div a {
+    text-decoration: none;
+    color: white;
+}
+.footer-div p {
+    color: rgba(189, 179, 179, 0.523);
+}
+
+.footer-div a:hover {
+    color: rgba(255, 0, 51, 0.877);
+    transition: 0.5s;
+}

@@ -5,8 +5,8 @@
 }
 
 header {
-    background-color: rgba(51, 181, 224, 0.966);
-    padding: 50px;
+    background-color: rgb(67, 129, 165);
+    padding: 75px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -18,17 +18,24 @@ header nav ul {
 
 header nav ul li {
     list-style: none;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 13px;
 }
 
+header nav ul li a:hover {
+    color: rgb(77, 25, 126);
+    transition: 0.6s;
+}
+
+
 .sessao {
-    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%);
-    padding: 250px;
+    background: linear-gradient(180deg, #b8b9b9 8.33%, rgb(76, 139, 139) 100%);
+    padding: 280px;
     width: auto;
 }
 
@@ -118,13 +125,15 @@ header nav ul li a {
 .container h2 {
     font-size: 40px;
     margin-top: -250px;
-    color: rgba(75, 75, 75, 0.856);
+    color: rgba(54, 54, 54, 0.856);
     text-align: center;
 }
 
 .container p {
     font-size: 20px; 
     margin-top: 30px; 
+    margin-right: 60px;
+    margin-left: 60px;
     text-align: justify;
 }
 
@@ -158,30 +167,31 @@ header nav ul li a {
 
 .line {
     margin: 0 auto; 
-    width: 70%; 
+    width: 900px; 
 }
 
 .container img { 
-    margin-left: 10vw; 
+    margin-left: 190px; 
     margin-top: 30px; 
     width: 850px; 
 }
 
 .cofre {
-    background: linear-gradient(180deg, #101cc264 8.33%, rgba(16, 53, 122, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+    background: linear-gradient(180deg, #111aa059 8.33%, rgba(22, 78, 182, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
     background-position: center;
     background-attachment: fixed;
-    padding: 20%;
+    padding: 200px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .cofre img {
-    width: 380px;
+    width: 420px;
     height: auto;
     margin-top: 80px;
     margin-right: 70px;
+    margin-left: 70px;
 }
 
 .cofre h2 {
@@ -202,7 +212,7 @@ header nav ul li a {
 }
 
 footer {
-    padding: 55px;
+    padding: 80px;
     background-color: rgba(29, 29, 29, 0.966);
     text-align: center;
 }
@@ -230,5 +240,5 @@ footer img {
 
 .footer-div a:hover {
     color: rgba(255, 0, 51, 0.877);
-    transition: 0.5s;
+    transition: 0.6s;
 }

@@ -75,7 +75,7 @@ header {
     background-color: rgba(248, 248, 248, 0.76); /*Cor de fundo*/
     display: flex; /*Tamanho da sessão flex*/ 
     justify-content: space-around; /*alinhamento na horizontal*/
-    align-items: center; /*aAlinhamento na vertical*/
+    align-items: center; /*Alinhamento na vertical*/
 }
 
 .div1 a button {
@@ -98,7 +98,7 @@ header {
     color: white; /*Alterando a cor de fundo*/
     background-color: turquoise; /*Cor da letra ao passar o mouse*/
     transition: 0.8s; /*Tempo de transição*/
-    border-color: white; /*or da borda*/
+    border-color: white; /*Cor da borda*/
 }
 
 .div2 img { /*Estilização da img da sessão 2 (app)*/
@@ -162,69 +162,80 @@ header {
     width: 750px; 
 }
 
-.cofre {
-    background: linear-gradient(180deg, #111aa059 8.33%, rgba(22, 78, 182, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    padding: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.cofre { /*Criação e estilização do Container Cofre*/
+    background: linear-gradient(180deg, #111aa059 8.33%, rgba(22, 78, 182, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg); /*Filtro Grandient e imagem de fundo*/
+    background-position: center; /*Posicionamento da imagem*/
+    background-attachment: fixed; /*Deixando a imagem*/
+    background-size: cover; /*Posicionamento da imagem*/
+    padding: 200px; /*Preenchimento*/
+    display: flex; /*Tamanho da sessão flex*/ 
+    justify-content: space-evenly; /*alinhamento na horizontal*/
+    align-items: center; /*Alinhamento na vertical*/
 }
 
-.cofre img {
-    width: 420px;
-    height: auto;
-    margin-top: 80px;
-    margin-right: 70px;
-    margin-left: 70px;
+.cofre img { /*Estilizando a imagem*/
+    width: 380px; /*largura da imagem*/
+    height: auto; /*Altura da imagem*/
+    margin-top: 80px; /*Margem de cima*/
+    margin-right: 70px; /*Margem direita */
+    margin-left: 70px; /*Margem esquerda*/
+    
 }
 
-.cofre h2 {
-    color: white; 
-    font-size: 30px; 
-    text-align: center;
+.div-cofre h2 { /*Estilizando o subtitulo da sessão*/
+    color: white; /*Cor da letra*/
+    font-size: 30px; /*Tamanho da letra*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    font-weight: 600; /*Peso da fonte*/
 }
 
-.cofre p {
-    color: white;
-    font-size: 20px; 
-    text-align: center;
-    margin-top: 30px;
+.div-cofre p { /*Estilizando o parágrafo*/
+    color: white; /*Cor da letra*/
+    font-size: 20px; /*Tamanho da letra*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    margin-top: 30px; /*margem superior*/
+
 }
 
-.cofre span {
-    color: yellow;
+.div-cofre span { /*Estilizando o span*/
+    color: yellow; /*Cor da letra*/
+    font-weight: 600; /*Peso da fonte*/
 }
+/*Fim da sessão*/
 
+
+/*Estilização do rodapé*/
 footer {
-    padding: 80px;
-    background-color: rgba(29, 29, 29, 0.966);
-    text-align: center;
+    padding: 80px; /*Tamanho da sessão*/
+    background-color: rgba(29, 29, 29, 0.966); /*Cor de fundo*/
+    text-align: center; /*Alinhando ao centro*/
 }
 
-footer img {
-    width: 250px;
-    height: auto;
-    margin-top: -30px;
-    margin-bottom: 20px;
+footer img { /*Estilizando a imagem*/
+    width: 250px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem*/
+    margin-top: -30px; /*Margem superior*/
+    margin-bottom: 20px; /*Margem inferior*/
 }
 
-.footer-div {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
+.footer-div { /*Estilizando a div*/
+    display: flex; /*deixando a sessão flex*/
+    justify-content: space-between; /*Alinhamento na horizontal*/
+    text-align: center; /*Alinhamento na vertical*/
+    margin: 20px 0px; /*margem superior e inferior, esquerda e direita*/
 }
 
 .footer-div a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /*Retirando o sublinhado*/
+    color: white; /*Cor da letra*/
 }
+
 .footer-div p {
-    color: rgba(189, 179, 179, 0.523);
+    color: rgba(189, 179, 179, 0.523); /*Cor da letra*/
+    text-align: center; /*Alinhamento do texto ao centro*/
 }
 
 .footer-div a:hover {
-    color: rgba(255, 0, 51, 0.877);
-    transition: 0.6s;
+    color: rgba(255, 0, 51, 0.877); /*Cor da letra*/
+    transition: 0.8s; /*Tempo de transição*/
 }

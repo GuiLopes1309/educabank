@@ -1,163 +1,149 @@
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: 'Times New Roman', Times, serif;
 }
-
+/*Inicio do header */
 header {
-    background-color: rgb(67, 129, 165);
-    padding: 75px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    background-color: rgb(67, 129, 165); /*cor de fundo*/
+    padding: 75px; /*tamanho do preenchimento*/
+    
 }
 
-header nav ul {
-    display: flex;
+.ul-naoOrdenada { /*estilizando a Lista não ordenada*/
+    display: flex; /*Colocando as LI lado a lado*/
+    justify-content: end; /*Justificando o conteúdo para o fim(posiocionamento) do header*/
 }
 
-header nav ul li {
-    list-style: none;
-    margin-right: 10px;
+.ul-naoOrdenada li a { /*âncora do header*/
+    text-decoration: none; /*Retirando a decoração de texto (sublinhado)*/
+    color: white; /*Cor da letra*/
+    font-size: 13px;/*Tamanho da fonte*/
+    margin-left: 20px; /*espaçamento entre as linhas/âncoras */
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
+.ul-naoOrdenada li a:hover { /*aplicando o hover na âncora*/
+    color: rgb(77, 25, 126);/*Cor ao passar o mouse*/
+    transition: 0.6s; /*tempo de transição*/
 }
 
-header nav ul li a:hover {
-    color: rgb(77, 25, 126);
-    transition: 0.6s;
-}
+/*Fim do Header*/
 
 
-.sessao {
-    background: linear-gradient(180deg, #b8b9b9 8.33%, rgb(76, 139, 139) 100%);
-    padding: 280px;
-    width: auto;
+.sessao { /*Aqui chamamos nosso primeiro ID para estilização*/
+    background: linear-gradient(180deg, #b8b9b9 8.33%, rgb(76, 139, 139) 100%); /*Uma cor com degradê*/
+    padding: 200px; /*Preenchimento da sessão*/
 }
 
-.sessao h1 {
-    font-size: 55px;
-    color: rgba(75, 75, 75, 0.856);
+.sessao h1 { /*Título da primeira sessão*/
+    font-size: 55px; /*Tamanho da fonte*/
+    color: rgba(41, 40, 40, 0.856); /*Cor da letra*/
+    font-weight: 600; /*Peso da fonte*/
 }
 
-.sessao p {
-    font-size: 40px;
+.sessao p { /*Parágrafo para estilização*/
+    font-size: 40px; /*Tamanho da fonte*/
+    margin-top: 10px; /*Espaçamento superior*/
+    margin-bottom: 10px; /*Espaçamento inferior*/
 }
 
-.sessao button {
-    padding: 20px;
-    border-radius: 50px;
-    width: 300px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: rgb(59, 216, 200);
-    border-color: turquoise;
+.sessao a button { /*Estilização primeiro botão*/
+    border-radius: 50px; /*arredondamento do botão*/
+    width: 300px; /*Largura do botão*/
+    height: 60px; /*Altura do botão*/
+    cursor: pointer; /*altera o cursor do mouse*/
+    color: turquoise; /*Cor da letra*/
+    border-color: turquoise; /*Cor da borda*/
 }
 
-.sessao button:hover {
-    color: white;
-    background-color: turquoise;
-    transition: 0.8s;
-    border-color: white;
+.sessao a button:hover { /*Aplicando o hover no botão*/
+    color: white; /*Alterando a cor de fundo*/
+    background-color: turquoise; /*Cor da letra ao passar o mouse*/
+    transition: 0.8s; /*Tempo de transição*/
+    border-color: white; /*or da borda*/
 }
+
+/*Fim da primeira sessão*/
+
+
+
+/*Inicio da sessão 2*/
 
 .app {
-    padding: 150px;
-    background-color: rgba(248, 248, 248, 0.76);
-    display: flex;
-    justify-content: space-around;
+    padding: 200px; /*Preenchimento da sessão*/
+    background-color: rgba(248, 248, 248, 0.76); /*Cor de fundo*/
+    display: flex; /*Tamanho da sessão flex*/ 
+    justify-content: space-around; /*alinhamento na horizontal*/
+    align-items: center; /*aAlinhamento na vertical*/
 }
 
-.app div a button {
-    padding: 20px;
-    border-radius: 50px;
-    width: 300px;
-    margin: 40px;
-    font-size: 15px;
-    color: rgb(59, 216, 200);
-    border-color: turquoise;
-    cursor: pointer;
+.div1 a button {
+    border-radius: 50px; /*arredondamento do botão*/
+    width: 300px; /*Largura do botão*/
+    height: 60px; /*Altura do botão*/
+    cursor: pointer; /**/
+    color: turquoise; /*Cor da letra*/
+    border-color: turquoise; /*Cor da borda*/
 }
 
-.app div p {
-    margin-left: 50px;
-    margin-top: 50px;
-    font-size: 43px;
+.div1 p {
+    font-size: 40px; /*Tamanho da fonte*/
+    margin-top: 10px; /*Espaçamento superior*/
+    margin-bottom: 20px; /*Espaçamento inferior*/
+    font-weight: 500px; /*peso da fonte*/
 }
 
-.app div a button:hover {
-    background-color: turquoise; 
-    transition: 0.8s;
-    border-color: white; 
-    color: white;
+.div1 a button:hover {
+    color: white; /*Alterando a cor de fundo*/
+    background-color: turquoise; /*Cor da letra ao passar o mouse*/
+    transition: 0.8s; /*Tempo de transição*/
+    border-color: white; /*or da borda*/
 }
 
-.app div a {
-    text-decoration: none;
-    color: rgb(19, 153, 108); /*Cor da letra*/
-    font-size: 15px;
+.div2 img { /*Estilização da img da sessão 2 (app)*/
+    width: 500px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem*/
+    margin-left: 50px; /*Espaçamento à esquerda*/
 }
 
-.app div button a {
-    color: white;
-    transition: 0.8s;
+/*Encerramento da sessão 2*/
+
+
+
+/*INICIO DA SESSÃO 3*/
+
+.container { /*estlizando a sessão 3*/
+    padding: 200px; /*tamanho da sessão*/
+    background-color: rgba(248, 248, 248, 0.76); /*Cor de fundo*/
 }
 
-.app img {
-    width: 500px;
-    height: 500px;
-    margin-right: 80px;
-    margin-left: 50px;
-    margin-top: -80px;
-    align-items: center;
+.container h2 { /*Estilização do subtitulo*/
+    color: rgba(0, 11, 61, 0.856); /*cor da letra*/
+    text-align: center; /*Alinhamento ao centro*/
+    font-size: 40px; /*Tamanho da Letra*/
+    margin-top: -200px; /*Espaçamento em relação a sessão de cima*/
 }
 
-.container {
-    padding: 170px;
-    margin-top: 30px;
-    background-color: rgba(248, 248, 248, 0.76);
+.container p { /*Estilização dos parágrafos*/
+    font-size: 20px; /*Tamanho da letra */
+    margin-top: 30px; /*Margem superior */
+    color: rgba(0, 11, 61, 0.856); /*Cor da letra*/
+    text-align: justify; /*Justifcando o texto*/
 }
 
-.container h2 {
-    font-size: 40px;
-    margin-top: -250px;
-    color: rgba(54, 54, 54, 0.856);
-    text-align: center;
+.container a button { /*Estilização do botão*/
+    padding: 20px; /*Preenchimento do Botão*/
+    border-radius: 50px; /*Arredondamento da borda do botão*/
+    width: 300px; /*Largura do botão*/ 
+    color: rgb(39, 39, 228); /*Cor da letra*/
+    border-color: rgb(39, 39, 228); /*Cor da borda*/
+    font-size: 15px; /*Tamanho da letra*/
+    margin-top: 40px; /*Margem superior*/
+    margin-bottom: 40px; /*Margem inferior*/
 }
 
-.container p {
-    font-size: 20px; 
-    margin-top: 30px; 
-    margin-right: 60px;
-    margin-left: 60px;
-    text-align: justify;
-}
-
-.container button {
-    padding: 20px; 
-    border-radius: 50px; 
-    width: 250px; 
-    color: rgb(57, 46, 212); 
-    border-color: rgb(57, 46, 212); 
-    margin: 60px; 
-    font-size: 15px;
-}
-
-.container button a {
-    color: blue;
-    text-decoration: none;
-}
-
-.container button a:hover {
-    color: white;
-    transition: 0.8s;
-}
-
-.container button:hover {
+.container a button:hover {
     background-color: rgb(57, 46, 212);
     color: white;
     border-color: white;
@@ -165,15 +151,15 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-.line {
-    margin: 0 auto; 
-    width: 900px; 
+.line { /*Estilização da linha*/
+    width: 70%; /*Largura da linha*/
+    margin: 40px auto; /*Espaçamento de 40px top e bottom e esquerda e direita automáticas*/ 
 }
 
-.container img { 
-    margin-left: 190px; 
+.container img { /*Estilizando a imagem*/
+    margin-left: 200px; /*IREMOS ALTERAR A FORMATAÇÃO DE ALINHAMENTO*/
     margin-top: 30px; 
-    width: 850px; 
+    width: 750px; 
 }
 
 .cofre {

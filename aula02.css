@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #64aec7;
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #00182a;
+    padding: 100px;
+}
+
+.flex-container {
+    display: flex; /*Tamanho da sessão flex*/ 
+    justify-content: center; /*alinhamento na horizontal*/
+    align-items: center; /*Alinhamento na vertical*/
+    gap: 20px; /*Propriedade utilizada para dae o respiro/espaço entre os elementos*/
+    padding: 200px; /*Tamanho da sessão*/
+    
+}
+  
+.flex-container div {
+    background: linear-gradient(180deg, rgb(61, 118, 240), rgb(9, 6, 214)); /*Cor de fundo da caixa*/
+    width: 200px; /*Largura da caixa*/
+    height: 300px; /*Altura da Caixa*/
+    padding: 20px; /*Respiro da caixa*/
+    color: aliceblue; /*Cor da letra*/
+    box-shadow: 10px 10px 10px black; /*Sombra externa da caixa primeiro valor eixo horizontal, segundo valor eixo vertical, ultimo valor exposição da sombra*/
+}
+  
+.flex-container div:hover{
+    transition: 0.5s; /*Tempo de transição*/
+    transform: translate(10px, 0px); /*Primeiro eixo X (horizontal, depois valor do eixo Y (vertical)*/ 
+    transform: rotate(0.5deg); /*Rotação da caixa*/
+    transform: scale(1.1, 1.1); /*Tabalha com a escala de movimentação dos eixos X e Y*/
+    transform: skew(5deg, 5deg); 
+}
+/*1. translate() 
+Descrição: Move um elemento ao redor do seu ponto central. */
+
+/*2. rotate() 
+Descrição: Rotaciona um elemento ao redor do seu ponto central.*/
+
+/*3. scale()
+Descrição: Redimensiona um elemento ao longo dos eixos X e Y.*/
+
+/*4. skew() 
+Descrição: Inclina um elemento ao longo dos eixos X e Y.*/
+
+.sessao-nova {
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sessao-nova div {
+    background: linear-gradient(220deg, #193d5131 8.33%, #64aec738 100%), url(imagens/sky-5534319_1280.jpg);
+    padding: 20px;
+    width: 230px;
+    height: auto;
+    box-shadow: 10px -10px 10px black;
+    border-radius: 20px;
+}
+
+.sessao-nova div:hover {
+    transition: 0.8s;
+    transform: scale(1.07, 1.07);
+}
+
+
+footer {
+    background-color: #00182a;
+    padding: 100px;
+}
+
+
+.div-rodape a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+}
+
+.div-rodape a i {
+    background-color: rgb(250, 250, 250);
+    padding: 7px;
+    border-radius: 10px;
+   
+}
+
+.div-rodape a i:hover {
+    background-color: rgba(250, 235, 215, 0.459);
+    transition: 0.6s;
+    font-size: 45px;
+}
